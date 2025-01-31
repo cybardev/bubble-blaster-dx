@@ -1,0 +1,177 @@
+{
+  "_resourceType": "scene",
+  "id": "c27c9add-bd09-4897-a0c4-da4db0360038",
+  "_index": 1,
+  "name": "Blaster",
+  "backgroundId": "1af41ab9-6896-471e-a139-447a5066d76f",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "POINTNCLICK",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_2",
+  "x": 240,
+  "y": 30,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Init Vars",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_FLAGS",
+            "args": {
+              "variable": "2",
+              "flag1": true,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false,
+              "__collapse": true
+            },
+            "id": "19addaf1-08e0-4655-980d-7914d3befccf"
+          },
+          {
+            "command": "EVENT_SET_FLAGS",
+            "args": {
+              "variable": "3",
+              "flag1": true,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false,
+              "__collapse": true
+            },
+            "id": "12c37468-3bfe-4aae-a225-8676e64a2fe6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "fc7c1b2b-fa6a-4821-864a-b974257307df"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "57d9bb72-2a53-4e9f-b6a5-37814e450685"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "1",
+              "value": {
+                "type": "number",
+                "value": 60
+              },
+              "__collapse": true
+            },
+            "id": "3d4f0d49-7e06-49ab-89ab-467ae2f48030"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "5",
+              "value": {
+                "type": "false"
+              },
+              "__collapse": true
+            },
+            "id": "d864a1b2-0452-4f92-a559-6487214da28c"
+          }
+        ]
+      },
+      "id": "48c9bb77-bf14-460c-94ab-8911e9b39ead"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "Time:%D3$01$ Score:%D5$00$",
+        "x": 0,
+        "y": 0,
+        "location": "background",
+        "__comment": false,
+        "__collapse": true,
+        "__label": "Draw HUD"
+      },
+      "id": "c898fd7b-6767-4fcd-b57e-6786a076aa0b"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": false,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "e078b05b-8e79-4d08-841c-14690d513366",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.2,
+              "wait": false,
+              "effect": 1,
+              "__collapse": true,
+              "__comment": false,
+              "__label": "Play Blast SFX"
+            },
+            "id": "a653deaf-1df7-4ec9-822d-d94416896568"
+          }
+        ]
+      },
+      "id": "39f80fa7-bc9f-4e7e-b2bb-ad97d448ae3b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "b81ff065-a1d3-482d-8026-f764badec81f",
+  "autoFadeEventCollapse": true
+}

@@ -1,0 +1,32 @@
+{
+  "_resourceType": "triggerPrefab",
+  "id": "743a6f69-3186-477a-95c6-7930a3ac3260",
+  "name": "Spike Wall",
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": []
+      },
+      "id": "922ac63d-6fb7-4b09-83f5-c7cc87fbe527"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ]
+      },
+      "id": "8701d664-fb53-46b6-9af5-418de9596d98"
+    }
+  ]
+}

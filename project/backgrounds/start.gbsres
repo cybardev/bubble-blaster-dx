@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "e591d99a-76d0-416b-9f9d-678dbab94d6f",
+  "name": "start",
+  "symbol": "bg_bg_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "start.png",
+  "tileColors": "",
+  "autoColor": false
+}

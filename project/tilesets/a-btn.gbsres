@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "a0b455f3-8c6b-4d44-adcb-2e034fd6d62f",
+  "name": "A-btn",
+  "symbol": "tileset_a_btn",
+  "width": 4,
+  "height": 2,
+  "imageWidth": 32,
+  "imageHeight": 16,
+  "filename": "A-btn.png"
+}

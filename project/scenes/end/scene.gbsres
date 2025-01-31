@@ -1,0 +1,137 @@
+{
+  "_resourceType": "scene",
+  "id": "f87e05aa-f54c-48c7-b0fb-0046edddcf8b",
+  "_index": 3,
+  "name": "End",
+  "backgroundId": "ff5d05b0-96af-4b64-8afe-ab82bc324dc0",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_4",
+  "x": 424,
+  "y": 32,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "8cf0da1c-3d84-4c36-8525-f0f5adeaa40b"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true,
+        "__label": "Press A to Continue"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "e078b05b-8e79-4d08-841c-14690d513366",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 1,
+              "__collapse": true,
+              "__label": "Play Blast SFX"
+            },
+            "id": "f0ec46ee-c168-4b48-9986-682cf0f60f22"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "b40b30f3-faeb-4891-b25a-4e842ada03dd",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": true
+            },
+            "id": "a2c2617d-626a-4239-9659-85f780d4faf8"
+          }
+        ]
+      },
+      "id": "efc12c0a-0515-4dfb-9e43-585029d8a953"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "!F:dd68b75b-63a3-4f3a-8d35-6a26132e4428!Score:%D6$00$",
+        "x": 4,
+        "y": 9,
+        "location": "background",
+        "__collapse": true
+      },
+      "id": "b902ab84-b053-47ef-89d0-17cb3e4eb123"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 1,
+        "frames": 30,
+        "__scriptTabs": "end",
+        "__label": "Animations",
+        "__collapse": true
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_REPLACE_TILE_XY_SEQUENCE",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 13
+              },
+              "tilesetId": "a0b455f3-8c6b-4d44-adcb-2e034fd6d62f",
+              "tileIndex": {
+                "type": "number",
+                "value": 0
+              },
+              "frames": {
+                "type": "number",
+                "value": 2
+              },
+              "variable": "T0",
+              "tileSize": "16px",
+              "__collapse": true,
+              "__label": "Animate A Button"
+            },
+            "id": "06cc921b-60a0-4480-ac5e-3c660b99814d"
+          }
+        ]
+      },
+      "id": "0ba8e011-dfb4-4539-bc1d-6e3152ca82f7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "b81ff065-a1d3-482d-8026-f764badec81f"
+}

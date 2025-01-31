@@ -1,0 +1,266 @@
+{
+  "_resourceType": "actor",
+  "id": "9a8c32ee-9e5f-4328-ad5f-70dbbffd0a81",
+  "name": "Blaster Bot",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b81ff065-a1d3-482d-8026-f764badec81f",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_9",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 2,
+        "duration": 1,
+        "frames": 30,
+        "__scriptTabs": "end"
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 17
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "ee326ff2-aa82-4640-a568-7d4974073fe6"
+          },
+          {
+            "command": "EVENT_THREAD_START",
+            "args": {
+              "variable": "T0",
+              "__scriptTabs": "true",
+              "__label": "SFX Thread",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "e078b05b-8e79-4d08-841c-14690d513366",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 1,
+                    "__collapse": true,
+                    "__label": "Play Blast SFX"
+                  },
+                  "id": "8bd21305-26b7-481e-baee-861797f4386b"
+                }
+              ]
+            },
+            "id": "583b0a67-bfa9-46b3-bb6b-561eea224900"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "7860d19d-1aaf-45bf-a725-7365f2a1e3a3"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 17
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "eab78230-5b53-4f7f-941e-a22f89fd7dc6"
+          },
+          {
+            "command": "EVENT_THREAD_START",
+            "args": {
+              "variable": "T0",
+              "__scriptTabs": "true",
+              "__label": "SFX Thread",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "e078b05b-8e79-4d08-841c-14690d513366",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 1,
+                    "__collapse": true,
+                    "__label": "Play Blast SFX"
+                  },
+                  "id": "2ff53d2c-05a6-4464-99e7-9acd04b209b2"
+                }
+              ]
+            },
+            "id": "521fa13b-5f79-46fa-ad94-653dce0d57f6"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "ff85a34b-24ba-4e87-96fa-3d327d2dbeb0"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "28dca9d9-ff9f-424d-af7b-a025ddd0b4fc"
+          },
+          {
+            "command": "EVENT_THREAD_START",
+            "args": {
+              "variable": "T0",
+              "__scriptTabs": "true",
+              "__label": "SFX Thread",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "e078b05b-8e79-4d08-841c-14690d513366",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 1,
+                    "__collapse": true,
+                    "__label": "Play Blast SFX"
+                  },
+                  "id": "a2e6d73f-15e1-47cf-87b9-9d50a521019e"
+                }
+              ]
+            },
+            "id": "2b4cab4d-d9f0-47bb-9c3a-99eabaed3ace"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "8fdcde4c-9c8d-4d55-b806-d7519f23c981"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "945da769-e63d-4d81-9c6f-d927412733f1"
+          },
+          {
+            "command": "EVENT_THREAD_START",
+            "args": {
+              "variable": "T0",
+              "__scriptTabs": "true",
+              "__label": "SFX Thread",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "e078b05b-8e79-4d08-841c-14690d513366",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 1,
+                    "__collapse": true,
+                    "__label": "Play Blast SFX"
+                  },
+                  "id": "f5270924-4a81-4d1c-a0c2-a08ff5e5dd97"
+                }
+              ]
+            },
+            "id": "65f262dc-574c-4bb8-a91c-aea6068b5db6"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "35198943-2b54-4e54-b702-fe71aadda494"
+          }
+        ]
+      },
+      "id": "59654b34-34d5-4afa-97cb-0cfdf4157ea0"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 1,
+  "y": 12,
+  "_index": 0
+}

@@ -1,0 +1,45 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Score",
+      "symbol": "var_score"
+    },
+    {
+      "id": "1",
+      "name": "Timer",
+      "symbol": "var_timer"
+    },
+    {
+      "id": "2",
+      "name": "bbl-spd-flag",
+      "symbol": "var_bbl_spd_flag"
+    },
+    {
+      "id": "3",
+      "name": "aim-spd-flag",
+      "symbol": "var_aim_spd_flag"
+    },
+    {
+      "id": "4",
+      "name": "Pop Count",
+      "symbol": "var_pop_count"
+    },
+    {
+      "id": "5",
+      "name": "pop-lock",
+      "symbol": "var_pop_lock"
+    },
+    {
+      "id": "7321f868-9459-4416-8ac8-f1d15e25f37f__L0",
+      "name": "shoot_chance",
+      "symbol": "var_shoot_chance"
+    },
+    {
+      "id": "7321f868-9459-4416-8ac8-f1d15e25f37f__L1",
+      "name": "blaster_pos",
+      "symbol": "var_blaster_pos"
+    }
+  ]
+}
