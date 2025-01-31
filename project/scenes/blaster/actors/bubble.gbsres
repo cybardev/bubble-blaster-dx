@@ -4,7 +4,7 @@
   "name": "Bubble",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "71d96d85-385e-47bc-965b-d59d96bf0622",
+  "spriteSheetId": "9730a034-3210-4aa9-8809-c4d38f7a9754",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 0.25,
@@ -34,9 +34,24 @@
       "children": {
         "true": [
           {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "right",
+                "down",
+                "up",
+                "left",
+                "a"
+              ],
+              "__collapse": true
+            },
+            "id": "297781eb-5f01-4eeb-aff7-736c7a26bf6d"
+          },
+          {
             "command": "EVENT_GROUP",
             "args": {
-              "__label": "Pop"
+              "__label": "Pop",
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -160,7 +175,7 @@
                         "command": "EVENT_ACTOR_SET_SPRITE",
                         "args": {
                           "actorId": "$self$",
-                          "spriteSheetId": "71d96d85-385e-47bc-965b-d59d96bf0622",
+                          "spriteSheetId": "9730a034-3210-4aa9-8809-c4d38f7a9754",
                           "__collapse": true
                         },
                         "id": "df88bd10-5634-4fc2-a151-42707382f0bc"

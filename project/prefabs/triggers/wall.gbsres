@@ -4,30 +4,19 @@
   "name": "Wall",
   "script": [
     {
-      "command": "EVENT_SET_INPUT_SCRIPT",
+      "command": "EVENT_ACTOR_SET_POSITION",
       "args": {
-        "input": [
-          "left"
-        ],
-        "override": true,
-        "__scriptTabs": "press"
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
       },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_ACTOR_SET_DIRECTION",
-            "args": {
-              "actorId": "$self$",
-              "direction": {
-                "type": "direction",
-                "value": "left"
-              }
-            },
-            "id": "53df74d4-716c-45f7-a95f-c7a6f1ddb497"
-          }
-        ]
-      },
-      "id": "484b3c5a-d886-42c1-b84a-06baee85c443"
+      "id": "ee6eed2c-544c-4c02-9a77-0e4cc27450a6"
     }
   ],
   "leaveScript": [

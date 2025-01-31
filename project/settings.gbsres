@@ -10,20 +10,20 @@
   "sgbEnabled": false,
   "customHead": "",
   "defaultBackgroundPaletteIds": [
-    "default-bg-1",
+    "dmg",
     "default-bg-2",
     "default-bg-3",
     "default-bg-4",
     "default-bg-5",
     "default-bg-6",
-    "dmg",
+    "fe41a50a-5251-4298-977d-e20df9a594aa",
     "default-ui"
   ],
   "defaultSpritePaletteIds": [
-    "default-sprite",
-    "default-sprite",
-    "default-sprite",
-    "default-sprite",
+    "fe41a50a-5251-4298-977d-e20df9a594aa",
+    "31b3c203-802b-4a0f-a2da-6e6c214e3b53",
+    "cb9cc42e-e1df-4965-b442-f09769dd43b4",
+    "dmg",
     "default-sprite",
     "default-sprite",
     "default-sprite",
@@ -81,7 +81,7 @@
   "customControlsSelect": [
     "Shift"
   ],
-  "colorMode": "mono",
+  "colorMode": "mixed",
   "generateDebugFilesEnabled": false,
   "compilerPreset": 3000,
   "scriptEventPresets": {},
